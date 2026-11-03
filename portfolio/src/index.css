@@ -1,0 +1,24 @@
+:root {
+
+  /* VARIABLES CSS */
+  --main-color: #ff0138;
+  --rojo-color: #f34a52;
+  --carmesi-color: #cb3756;
+  --morado-color: #2c1346;
+  --rosa-color: #6b235c;
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  scrollbar-color: var(--rojo-color) #000;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+}
+

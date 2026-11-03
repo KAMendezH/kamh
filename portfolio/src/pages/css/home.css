@@ -1,0 +1,182 @@
+.Home{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* BIENVENIDA */
+.Home__black__section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #000000e3;
+}
+
+.Home__welcome span {
+    background-color: var(--carmesi-color);
+    display: flex;
+    padding: .3rem;
+    border-radius: 15px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px var(--rosa-color), 0 0 14px var(--rojo-color);
+}
+
+.Home__welcome span h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    text-align: center;
+    font-weight:900;
+}
+
+/* SUBTITULO */
+.Home__welcome h3 {
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* BOTÓN DE CV */
+.Home__welcome h4 {
+    color: #8b7e7e;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.Home__enlace {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Home__welcome a {
+    width: clamp(150px, 40%, 250px);
+    background-color: var(--carmesi-color);
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: 0 0 10px var(--rosa-color);
+    &:hover {
+        background-color: var(--rojo-color);
+    }
+}
+
+
+
+/* EXPLORE */
+.Home__explore h2 {
+    color: var(--rojo-color);
+    text-align: center;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    margin-bottom: 1rem;
+}
+
+.Home__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Home__content__div {
+    min-width: 144px;
+    /* flex: 1; */
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.Home__explore section div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    color: #5e5c5c;
+}
+
+.Home__icons {
+    font-size: clamp(5rem, 5vw, 10rem);
+}
+
+
+.Home__content__projects:hover a {
+    color: #003cff;
+    transition: .3s;
+}
+
+.Home__content__tools:hover a {
+    color: #fd0c0c;
+    transition: .3s;
+}
+
+.Home__content__certificates:hover a {
+    color: #08b102;
+    transition: .3s;
+}
+
+.Home__content__contact:hover a {
+    color: #3e04c4;
+    transition: .3s;
+}
+
+
+/* CONTACT */
+.Home__contact {
+    background-color: #000;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.Home__contact h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.Home__contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Home__contact a {
+    width: 70%;
+    height: 50px;
+    max-width: 300px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.Home__contact__icons {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+}
+
+.Home__contact__whatsapp {
+    background-color: #129c0e;
+}
+
+.Home__contact__facebook {
+    background-color: #003cff;
+}

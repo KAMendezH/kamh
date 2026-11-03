@@ -1,0 +1,240 @@
+.Header{
+    /* IMAGE BACKGROUND */
+    background-color: #00000056;
+    background-image: url("../../../public/imgs/banner.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0 0 15px var(--carmesi-color) inset, 0 0 20px var(--rosa-color) inset, 0 0 30px var(--morado-color) inset;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.336);
+    }
+    width: 100%;
+    height: 240px;
+
+    display: grid;
+    grid-template-rows: 45px 1fr;
+
+
+
+}
+
+/* NAVEGACIÓN */
+.Header__nav{
+    background-color: #000;
+    width: 100%;
+    padding: 5px 1rem;
+    height: 45px;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    box-shadow: 0 0px 2px var(--rojo-color), 0 0 4px var(--carmesi-color), 0 0 8px var(--morado-color);
+    z-index: 5;
+}
+/* ESPACIO VACÍO */
+.Header__emty-space{
+    width: 45px;
+}
+/* IMAGEN DE PERFIL */
+.Header__perfil{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+
+/* ICONO */
+
+.Header__span--icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        background-color: #0c0c0c;
+    }
+}
+.Header__menu--icon{
+    color: var(--rosa-color);
+}
+
+/* MENÚ DESPLEGABLE */
+
+.Header__menu{
+    --clippy: polygon(0 0, 100% 0, 100% 0, 0 0);
+    position: absolute;
+    width: 100%;
+    background-color: #0c0c0c;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 7px var(--rosa-color) inset, 0 0 1px var(--rojo-color) inset;
+
+    clip-path: var(--clippy);
+
+    transition: clip-path .3s ease-in-out;
+    padding: 12px;
+    pointer-events: none;
+
+}
+
+.Header__menu--active{
+    pointer-events: all;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: var(--clippy);
+}
+
+/* -- ul */
+.Header__menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    list-style: none;
+}
+
+/* --Header NavLink */
+.Header__NavLink{
+    --navlink-color: #8d6666;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--navlink-color);
+    font-size: clamp(.8rem, 2vw, 1.3rem);
+
+    transition: .3s;
+}
+
+.Header__NavLink--active{
+    transition: .3s;
+    --navlink-color: var(--carmesi-color);
+    color: var(--navlink-color);
+}
+/* --Icono */
+.Header__icon--active{
+    transform: rotate(180deg);
+}
+
+
+
+/* PRESENTACIÓN */
+
+.Header__section{
+    width: 100%;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/* EFECTO VIDRIO */
+.Header__glass{
+    background-color: #ffffff23;
+    display: flex;
+    width: 250px;
+    min-height: 95px;
+    border-radius: 16px;
+    backdrop-filter: blur(1px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3px;
+}
+
+.Header__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Header__glass div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* LOGO */
+.Header__logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* -- NOMBRE */
+
+.Header__name h1 {
+    color: #fff;
+    text-shadow: 0 0 2px #000, 0 0 4px #000, 0 0 6px #000;
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    text-align: center;
+    margin: 0;
+
+}
+
+/* --ING */
+
+.Header__ing span {
+    border-radius: 10px;
+    border: solid 1px var(--rojo-color);
+    display: flex;
+    padding: 2px 5px;
+    background-color: var(--morado-color);
+}
+
+.Header__ing span p{
+    font-size: clamp(.5rem, 2vw, .7rem);
+    color: var(--rojo-color);
+}
+
+
+/* RESPONSIVE */
+/* 375 */
+
+@media (min-width: 430px) {
+    .Header__emty-space{
+        display: none;
+    }
+    .Header__nav{
+        display: none;
+    }
+
+    .Header__section{
+        display: none;
+    }
+
+   
+    
+
+    .Header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-size:auto;
+    }
+
+    
+}
+

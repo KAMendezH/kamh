@@ -1,0 +1,61 @@
+/* .Layout__section{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer"
+    ;
+    width: 100%;
+    min-height: 100dvh;
+    height: 100dvh;
+    align-content: space-between;
+
+    background: 
+        radial-gradient(circle 50px, var(--carmesi-color), transparent),
+        radial-gradient(circle 100px at right, var(--carmesi-color), transparent),
+    ;
+   
+    background-color: ;
+} */
+.Layout__section {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer"
+    ;
+    align-content: space-between;
+    width: 100%;
+    min-height: 100dvh;
+    background:
+        radial-gradient(circle 200px at 10% 10%, var(--carmesi-color), transparent),
+        radial-gradient(circle 200px at 20% 20%, var(--morado-color), transparent),
+        radial-gradient(circle 250px at 90% 90%, var(--morado-color), transparent),
+        radial-gradient(circle 170px at 100% 5%, var(--morado-color), transparent),
+        radial-gradient(circle 150px at 80% 80%, var(--carmesi-color), transparent),
+        radial-gradient(circle 70px at 85% 10%, var(--rosa-color), transparent),
+        radial-gradient(circle 190px at 40% 60%, var(--carmesi-color), transparent),
+        radial-gradient(circle 300px at left bottom, var(--carmesi-color), transparent)
+        ;
+    background-color: #110202;
+}
+
+.Layout__header__section {
+    grid-area: header;
+}
+
+.Layout__main {
+    display: flex;
+    /* height: 400px; */
+    /* background-color: aliceblue; */
+    grid-area: main;
+}
+
+.Layout__footer {
+    height: 50px;
+    grid-area: footer;
+}

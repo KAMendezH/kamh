@@ -1,0 +1,63 @@
+.ProjectCard {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 1rem;
+    border: solid 2px #c77e7e;
+
+}
+
+/* CONTENT TARGET AND LOGO */
+.ProjectCard__logo__target{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* LOGO */
+.ProjectCard__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 11px;
+    background: linear-gradient(-30deg,  var(--morado-color), var(--main-color))
+}
+
+.ProjectCard__icon {
+    font-size: 2.3rem;
+    color: #c77e7e;
+}
+
+.ProjectCard__logo p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c77e7e;
+}
+
+/* Targets */
+.ProjectCard__targets {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.ProjectCard__target {
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 1px 10px;
+    color:  var(--main-color);
+    background-color: #be09092c;
+    font-size: clamp(.8rem, 2vw, 1rem);
+}
+
+
+
+.ProjectCard__line {
+    background-color: var(--carmesi-color);
+    color: #be0909;
+    margin-top: .5rem;
+    height: 1px;
+    width: 100%;
+}
