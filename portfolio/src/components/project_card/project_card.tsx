@@ -22,17 +22,19 @@ export default function ProjectCard() {
             </div>
             <div className='ProjectCard__line'/>
             <div>
-                <span>
+                <span className='ProjectCard__info'>
                     <h4>Project: </h4>
                     <p>Web Site</p>
                 </span>
-                <span>
+                <span className='ProjectCard__info'>
                     <h4>Description: </h4>
                     <p>Description project</p>
                 </span>
             </div>
-            <div>
-                <a href="#">Visit project</a>
+            <div className='ProjectCard__link__container'>
+                <a className='ProjectCard__link' href="#">
+                    <p>Visit project</p>
+                </a>
             </div>
         </section>
     );

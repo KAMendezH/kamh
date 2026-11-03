@@ -3,8 +3,12 @@
     border-radius: 10px;
     padding: 1rem;
     border: solid 2px #c77e7e;
-
+    width: 100%;
+    /* max-width: 400px; */
+    flex: 1;
 }
+
+
 
 /* CONTENT TARGET AND LOGO */
 .ProjectCard__logo__target{
@@ -58,6 +62,49 @@
     background-color: var(--carmesi-color);
     color: #be0909;
     margin-top: .5rem;
+    margin-bottom: .5rem;
     height: 1px;
     width: 100%;
 }
+
+
+/* INFO */
+.ProjectCard__info {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.ProjectCard__info h4 {
+    color: var(--carmesi-color);
+    font-size: clamp(.9rem, 2vw, 1.1rem);
+}
+
+.ProjectCard__info p {
+    color: #8b7171;
+    font-size: clamp(.8rem, 2vw, 1rem);
+}
+
+/* LINK */
+.ProjectCard__link__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+.ProjectCard__link {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:#f5b7b7;
+}
+
+.ProjectCard__link p {
+    z-index: 1;
+}
+
+
